@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .innerComponent { 
+     display: grid;
+     justify-content: center;
+    }
+
+    .middleComponent{
+      transform: scale(0.9);
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .outer-mostComponent{
+      transform: scale(0.9);
+      width: 310px;
+      height: 495px; 
+      border-radius: 4%;
+      background-color: hsl(0, 0%, 12%);
+      color: hsl(0, 0%, 100%);
+    }
+
+    body{
+      max-width: 1440px;
+      display: flex;
+      justify-content: center;
+      background-color: hsl(0, 0%, 8%);
+      margin-top: 100px;
+      font-size: 14px;
+      font-family: Inter, sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    button{
+      border: none;
+      background-color: hsl(0, 0%, 20%);
+      color: hsl(0, 0%, 100%);
+      size: 90px;
+      cursor: pointer;
+      border-radius: 7px;
+      height: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: black;
+    }
+
+    img{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      justify-self: center;
+    }
+
+    @media (max-width: 375px) {
+      body {
+          font-size: 14px; 
+      }
+
+      .middleComponent {
+          max-width: 100%; 
+          padding: 10px;   
+      }
+
+      h1 {
+          font-size: 1.5rem; 
+      }
+
+      p {
+          font-size: 0.9rem; 
+      }
+
+      button {
+          size: 0.5rem;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="outer-mostComponent">
+    <div class="middleComponent">
+
+      <div class="innerComponent">
+        <img src="./assets/images/avatar-jessica.jpeg">
+        <h1 style="justify-self: center; font-weight: 700; ">
+          Jessica Randall
+          <div style="font-size: 14px; justify-self: center; color: hsl(75, 94%, 57%); font-weight: 600;">
+            London, United Kingdom<br>
+          </div>
+        </h1>
+
+        <p style="font-size: 14px; justify-self: center; font-weight: 400;">
+          "Front-end developer and avid reader."
+        </p>
+
+        <button>GitHub</button></br>
+        <button>Mentor</button></br>
+        <button>LinkedIn</button></br>
+        <button>Twitter</button></br>
+        <button>Instagram</button></br>
+      </div>
+  
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">SiddhiSarpale</a>.
+      </div>
+
+    </div>
+  </div>
+  
+</body>
+</html>
